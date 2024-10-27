@@ -21,7 +21,7 @@ def load_data():
 
 
 st.set_page_config(
-    page_title="玉川ダム　貯水率", page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items=None
+    page_title="玉川ダム　貯水率", page_icon=None, initial_sidebar_state="auto", menu_items=None
 )
 st.title("玉川ダム　貯水率")
 
