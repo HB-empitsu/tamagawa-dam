@@ -45,6 +45,9 @@ fig = px.line(filtered_df)
 for date in filtered_df[filtered_df.index.day == 1].index:
     fig.add_vline(x=date, line=dict(color="gray", width=1, dash="dot"), opacity=0.5)
 
+fig.add_hrect(y0=50, y1=60, fillcolor="yellow", opacity=0.2)
+fig.add_hrect(y0=30, y1=50, fillcolor="red", opacity=0.2)
+fig.add_hrect(y0=0, y1=30, fillcolor="gray", opacity=0.2)
 
 fig.update_layout(
     height=600,
